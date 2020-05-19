@@ -5,21 +5,29 @@
 @mixin planetas {
     height: 100vh;
     width: 100%;
-    background-size: cover;
-    background-repeat: no-repeat;
+    position: relative;
     display: flex;
     justify-content: center;
+  
     
 }
-body{
-    background: url(https://www.meteorologiaenred.com/wp-content/uploads/2018/07/Sistema-solar.jpg);
-    @include planetas;
-}
+.contenedorPadre{
+    
 
+    @include planetas();
+
+   
+}
+.contenedorPadre img{
+    height: 100vh;
+    width: 100%;
+    object-fit: cover;
+}
 .cont{
-    height: 90vh;
+    position: absolute;
+    height: 80vh;
     transform: translateY(35px);
-    width: 90%;
+    width: 80%;
     background: rgba(0,0,0,0.4);
     text-align: center;
     padding: 15px;
@@ -72,38 +80,9 @@ input:focus{
     background: rgba(0,0,0,0.7);
     box-shadow: 0px 0px 7px white;
 }
-.luna{
-    background: url(http://radarnews.mx/wp-content/uploads/2018/04/45-4.png);
-    @include planetas()
-}
-.mercurio{
-    background: url(http://1.bp.blogspot.com/-AZyuiqVGPBc/UcM2CvWiKhI/AAAAAAAAFbU/OGOdNwdaD6M/s1600/mercurio-color-lupa.jpg);
-    @include planetas;
-}
-.venus{
-    background: url(https://image.winudf.com/v2/image1/Y29tLmNvZGVrb25kaXRvci52ZW51c19zY3JlZW5fMTFfMTU0MTQxOTgwN18wMDU/screen-11.jpg?fakeurl=1&type=.jpg);
-    @include planetas;
-}
-.marte{
-    background: url(https://i.pinimg.com/originals/69/7c/67/697c67285d5d8fc2f70a59452690d8bd.jpg);
-    @include planetas;
-}
-.jupiter{
-    background: url(https://www.renderhub.com/virtual-creator-and-creature/incredible-hd-jupiter-planet/incredible-hd-jupiter-planet-03.jpg);
-    @include planetas;
-}
-.saturno{
-    background: url(http://3.bp.blogspot.com/-ccU3XHzKRJQ/Uv7gDqr6vmI/AAAAAAAAAcA/4ifNL6MFpw4/s1600/Bankoboev.Ru_planeta_saturn.jpg);
-    @include planetas;
-}
-.urano{
-    background: url(http://img2.rtve.es/i/?w=1600&i=1520938099246.jpg);
-    @include planetas;
-}
-.neptuno{
-    background: url(https://marbal.files.wordpress.com/2010/06/neptune__the_mystic_by_shadeforwench.jpg);
-    @include planetas;
-}
+
+
+
 ::placeholder{
     font-size: 10px;
     color: white;

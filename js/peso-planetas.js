@@ -2,9 +2,10 @@ var caja = document.getElementById("peso");
        var caja_planeta=document.getElementById('planeta');
        var botoncito =document.getElementById('boton');
         var body= document.getElementById('body');
-
+      var fondo = document.getElementById('fondo')
 
        botoncito.addEventListener('click', mostrar);
+       
 
 
         var mercurio = {nombre : 'mercurio', peso: 3.7};
@@ -33,55 +34,55 @@ var caja = document.getElementById("peso");
           {
               peso_final = tupeso * mercurio.peso / tierra.peso;
               nombreplaneta = mercurio.nombre;
-              body.classList.add('mercurio');
+              fondo.src = 'http://1.bp.blogspot.com/-AZyuiqVGPBc/UcM2CvWiKhI/AAAAAAAAFbU/OGOdNwdaD6M/s1600/mercurio-color-lupa.jp'
         
           }
           else if(planeta==2)
            {
              peso_final = tupeso * venus.peso / tierra.peso;
              nombreplaneta = venus.nombre;
-             body.classList.add('venus');
+             fondo.src = 'https://image.winudf.com/v2/image1/Y29tLmNvZGVrb25kaXRvci52ZW51c19zY3JlZW5fMTFfMTU0MTQxOTgwN18wMDU/screen-11.jpg?fakeurl=1&type=.jpg'
+             
 
            }
            else if(planeta==3)
            {
              peso_final = tupeso * luna.peso / tierra.peso;
              nombreplaneta = luna.nombre;
-             body.classList.add('luna');
+             fondo.src = 'http://radarnews.mx/wp-content/uploads/2018/04/45-4.png'
            }
            else if(planeta==4)
            {
              peso_final = tupeso * marte.peso / tierra.peso;
              nombreplaneta = marte.nombre;
-             body.classList.add('marte');
+             fondo.src = 'https://i.pinimg.com/originals/69/7c/67/697c67285d5d8fc2f70a59452690d8bd.jpg'
 
            }
            else if(planeta==5)
            {
              peso_final = tupeso * jupiter.peso / tierra.peso;
              nombreplaneta = jupiter.nombre;
-             body.classList.add('jupiter');
+             fondo.src = 'https://www.renderhub.com/virtual-creator-and-creature/incredible-hd-jupiter-planet/incredible-hd-jupiter-planet-03.jpg'
             
             }
             else if(planeta==6)
             {
               peso_final = tupeso * saturno.peso / tierra.peso;
               nombreplaneta = saturno.nombre;
-              body.classList.add('saturno');
-            
+              fondo.src = 'http://3.bp.blogspot.com/-ccU3XHzKRJQ/Uv7gDqr6vmI/AAAAAAAAAcA/4ifNL6MFpw4/s1600/Bankoboev.Ru_planeta_saturn.jpg'
             }
             else if(planeta==7)
             {
               peso_final = tupeso * urano.peso / tierra.peso;
               nombreplaneta = urano.nombre;
-              body.classList.add('urano');
+              fondo.src = 'http://img2.rtve.es/i/?w=1600&i=1520938099246.jpg'
             
             }
             else if(planeta==8)
             {
               peso_final = tupeso * neptuno.peso / tierra.peso;
               nombreplaneta = neptuno.nombre;
-              body.classList.add('neptuno');
+              fondo.src = 'https://marbal.files.wordpress.com/2010/06/neptune__the_mystic_by_shadeforwench.jpg';
             
             }
 
@@ -89,7 +90,7 @@ var caja = document.getElementById("peso");
         
         peso_final= parseInt(peso_final);
         
-        document.getElementById('marte').innerHTML += " " + nombreplaneta + " es : <strong>" + peso_final + " kilos</strong>";
+        document.getElementById('respuestaPeso').innerHTML += " " + nombreplaneta + " es : <strong>" + peso_final + " kilos</strong>";
        console.log(nombreplaneta)
 
        

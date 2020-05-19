@@ -8,7 +8,10 @@
     <title>Peso en otros planetas</title>
 </head>
 <body id="body">
-    <div class="cont">
+    <section class="contenedorPadre">
+        <img id="fondo"src="https://www.meteorologiaenred.com/wp-content/uploads/2018/07/Sistema-solar.jpg" alt="">
+        
+        <div class="cont">
       
         <h1>tu peso en otros planetas</h1>
         <p>Agrega tu peso:</p>
@@ -18,10 +21,13 @@
         <input placeholder="Pon el numero del planeta aqui" type="text" id="planeta">
         <br>
         <button id="boton">Descrubrelo aqui</button> <button type="reset" onClick="document.location.reload();">Reestablecer</button>
-       <p id="marte" class="tuPeso">Tu peso en </p>
+       <p id="respuestaPeso" class="tuPeso">Tu peso en </p>
        <br>
 
 </div>
+
+    </section>
+    
      <script src="../js/peso-planetas.js"></script>
 </body>
 </html>
