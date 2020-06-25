@@ -19,17 +19,14 @@ body {
   margin: 0;
 }
 
-header {
-  width: 100%;
-}
-header nav .logo {
+nav .logo {
   font-size: 22px;
   margin: 0;
 }
-header nav ul .links {
+nav ul .links {
   font-size: 18px;
 }
-header nav ul .links:hover {
+nav ul .links:hover {
   text-decoration: underline;
 }
 
