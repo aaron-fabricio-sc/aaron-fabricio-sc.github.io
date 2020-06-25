@@ -1,6 +1,6 @@
 @import url('https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300;0,400;0,600;0,700;0,800;1,300;1,400;1,600;1,700;1,800&display=swap" rel="stylesheet');
 @import url('https://fonts.googleapis.com/css2?family=Saira+Condensed:wght@100;200;300;400;500;600;700;800;900&display=swap" rel="stylesheet');
-#opcity, #sec2 .row .col .fondo, #sec3 .row .col .fondo, #sec4 .row .col .fondo, #sec5 .row .col .fondo, #sec1 .opacity {
+#opcity, #sec2 .row .col .fondo, #sec3 .row .col .fondo, #sec4 .row .col .fondo, #sec5 .row .col .fondo {
   position: absolute;
   left: 0;
   right: 0;
@@ -11,16 +11,25 @@
 
 * {
   font-family: "Open Sans", sans-serif;
+  box-sizing: border-box;
 }
 
-nav .logo {
-  font-size: 22px;
+body {
+  padding: 0;
+  margin: 0;
 }
-nav ul .links {
-  margin-left: 18px;
+
+header {
+  width: 100%;
+}
+header nav .logo {
+  font-size: 22px;
+  margin: 0;
+}
+header nav ul .links {
   font-size: 18px;
 }
-nav ul .links:hover {
+header nav ul .links:hover {
   text-decoration: underline;
 }
 
@@ -60,9 +69,6 @@ nav ul .links:hover {
   color: white;
   text-decoration: underline;
 }
-#sec1 .opacity {
-  background: rgba(0, 0, 0, 0.4);
-}
 
 #sec2, #sec3, #sec4, #sec5 {
   width: 100%;
@@ -71,6 +77,8 @@ nav ul .links:hover {
 }
 #sec2 .row, #sec3 .row, #sec4 .row, #sec5 .row {
   height: 100%;
+  width: 100%;
+  margin: 0;
 }
 #sec2 .row .col, #sec3 .row .col, #sec4 .row .col, #sec5 .row .col {
   height: 100%;
@@ -190,7 +198,7 @@ nav ul .links:hover {
   align-items: center;
   justify-content: center;
   color: #fff;
-  font-size: 30px !important;
+  font-size: 30px;
 }
 
 .cuatro .texto .social ul li:hover span:nth-child(5) {
