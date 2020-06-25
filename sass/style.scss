@@ -37,7 +37,7 @@ body{
 
  
     nav{
-
+       
         .logo{
             font-size: $size-big;
             margin: 0;
@@ -382,7 +382,8 @@ footer{
 
 
 @media only screen and (max-width:767px){
-    nav{
+    #navv{
+        
         .logo{
             font-size: $size-normal;
         }
