@@ -1,151 +1,161 @@
 @import url('https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300;0,400;0,600;0,700;0,800;1,300;1,400;1,600;1,700;1,800&display=swap" rel="stylesheet');
 @import url('https://fonts.googleapis.com/css2?family=Saira+Condensed:wght@100;200;300;400;500;600;700;800;900&display=swap" rel="stylesheet');
+#opcity, #sec2 .row .col .fondo, #sec3 .row .col .fondo, #sec4 .row .col .fondo, #sec5 .row .col .fondo, #sec1 .opacity {
+  position: absolute;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  top: 0;
+  background: rgba(0, 0, 0, 0.7);
+}
+
 * {
-  margin: 0;
   font-family: "Open Sans", sans-serif;
-  padding: 0;
 }
 
-.links {
+nav .logo {
+  font-size: 22px;
+}
+nav ul .links {
   margin-left: 18px;
-  font-size: 20px;
-  color: aliceblue;
+  font-size: 18px;
+}
+nav ul .links:hover {
+  text-decoration: underline;
 }
 
-.links:hover {
-  border-radius: 15px;
+#sec1 {
+  position: relative;
+}
+#sec1 .carousel-inner {
   background: black;
 }
-
-.carousel-caption {
-  padding-bottom: 210px;
-  margin-bottom: 22%;
+#sec1 .carousel-inner .carousel-item {
+  position: relative;
 }
-
-.carousel-caption h2 {
-  font-size: 35px;
+#sec1 .carousel-inner .carousel-item .carousel-caption {
+  position: absolute;
+  top: 35%;
+}
+#sec1 .carousel-inner .carousel-item .carousel-caption h2 {
   text-transform: uppercase;
-  font-weight: bold;
+  font-weight: 800;
 }
-
-.carousel-caption h3 {
-  font-size: 25px;
+#sec1 .carousel-inner .carousel-item .carousel-caption h3 {
+  font-family: "Saira Condensed", sans-serif;
   text-transform: uppercase;
-  font-weight: bold;
+  font-weight: 600;
 }
-
-.carousel-caption a {
+#sec1 .carousel-inner .carousel-item .carousel-caption a {
   background: #edbb00;
   padding: 15px 35px;
   display: inline-block;
   margin-top: 25px;
-  color: aliceblue;
+  color: #000000;
   text-transform: uppercase;
   border-radius: 25px;
 }
-
-.carousel-caption a:hover {
-  text-decoration: none;
-}
-
-.am {
-  color: aliceblue;
-}
-
-.carousel-inner {
-  background: black;
-}
-
-/* PARALLAX */
-.wrapper h2 {
+#sec1 .carousel-inner .carousel-item .carousel-caption a:hover {
+  background: #b68e00;
   color: white;
-  font-size: 30px;
-  text-transform: uppercase;
-  font-weight: bold;
+  text-decoration: underline;
+}
+#sec1 .opacity {
+  background: rgba(0, 0, 0, 0.4);
 }
 
-.wrapper h3 {
-  color: #edbb00;
-  font-size: 24px;
-  font-weight: bold;
-}
-
-.wrapper p {
-  color: aliceblue;
-  font-size: 21px;
-  letter-spacing: 1.5px;
-}
-
-.fondo {
+#sec2, #sec3, #sec4, #sec5 {
   width: 100%;
-  height: 100vh;
-  background: rgba(0, 0, 0, 0.6);
-}
-
-.texto {
-  transform: translateY(50px);
-  width: 85%;
   height: auto;
+  position: relative;
+}
+#sec2 .row, #sec3 .row, #sec4 .row, #sec5 .row {
+  height: 100%;
+}
+#sec2 .row .col, #sec3 .row .col, #sec4 .row .col, #sec5 .row .col {
+  height: 100%;
+}
+#sec2 .row .col .imagen img, #sec3 .row .col .imagen img, #sec4 .row .col .imagen img, #sec5 .row .col .imagen img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  z-index: -1;
+}
+#sec2 .row .col .texto, #sec3 .row .col .texto, #sec4 .row .col .texto, #sec5 .row .col .texto {
+  padding: 70px 0;
+  width: 85%;
   margin: auto;
   text-align: center;
-  padding-top: 35px;
+}
+#sec2 .row .col .texto h1, #sec3 .row .col .texto h1, #sec4 .row .col .texto h1, #sec5 .row .col .texto h1 {
+  color: white;
+  font-size: 26px;
+  text-transform: uppercase;
+  font-weight: 700;
+}
+#sec2 .row .col .texto h2, #sec3 .row .col .texto h2, #sec4 .row .col .texto h2, #sec5 .row .col .texto h2 {
+  color: white;
+  font-size: 26px;
+  text-transform: uppercase;
+  font-weight: 700;
+}
+#sec2 .row .col .texto h3, #sec3 .row .col .texto h3, #sec4 .row .col .texto h3, #sec5 .row .col .texto h3 {
+  color: #edbb00;
+  font-size: 22px;
+  font-weight: 600;
+  font-family: "Saira Condensed", sans-serif;
+}
+#sec2 .row .col .fondo, #sec3 .row .col .fondo, #sec4 .row .col .fondo, #sec5 .row .col .fondo {
+  z-index: -1;
 }
 
-.uno {
-  height: 100vh;
-  background: url(../img/section1.jpg);
+#sec3 .cajaproyectos .proyectos {
+  width: 60%;
+  height: 60%;
+  object-fit: cover;
+}
+#sec3 .cajaproyectos p {
+  color: white;
+  font-size: 16px;
 }
 
-.dos {
-  background: url(https://herramientascorporativas.com/wp-content/uploads/2018/09/bg7.jpeg);
-  height: 100vh;
-  background-size: cover;
-}
-
-.tres {
-  background: url(https://cdn.ticbeat.com/src/uploads/2019/05/GettyImages-1005771222-810x598.jpg);
-  height: 100vh;
-  background-size: cover;
-}
-
-.tres .container {
+#sec4 .row .col .texto {
+  height: 100%;
   display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
 }
-
-.tres div i {
+#sec4 .row .col .texto .detalles i {
   margin-top: 15px;
   font-size: 40px;
   color: white;
-  background: black;
+}
+#sec4 .row .col .texto .detalles p {
+  color: white;
+  font-family: "Saira Condensed", sans-serif;
+  font-size: 22px;
 }
 
-.cuatro {
-  background: url(https://amoxtliweb.com/wp-content/uploads/2017/05/amoxtliweb-paginas-web_bg04.jpg);
-  height: 100vh;
-  background-size: cover;
-  position: relative;
+#sec5 .row .col .texto {
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
 }
-
-.cuatro img {
+#sec5 .row .col .texto .gmail img {
   border-radius: 10px;
 }
-
-.cuatro .texto div a {
+#sec5 .row .col .texto .gmail p {
   color: white;
-  font-size: 19px;
-  display: inline-block;
 }
-
-.cuatro .texto .caja-4 {
-  display: flex;
-  width: 100%;
-  height: 100%;
-  position: absolute;
-  flex-direction: column;
-  justify-items: center;
-}
-
-.cuatro .texto .social {
+#sec5 .row .col .texto .social {
   width: 100%;
   margin-top: 100px;
   box-sizing: border-box;
@@ -153,27 +163,23 @@
   justify-content: center;
   align-items: center;
 }
-
-.cuatro .texto .social ul {
-  position: relative;
+#sec5 .row .col .texto .social ul {
   margin: 0;
   padding: 0;
   display: flex;
   flex-wrap: wrap;
   justify-content: space-between;
 }
-
-.cuatro .texto .social ul li {
+#sec5 .row .col .texto .social ul li {
   position: relative;
   list-style: none;
-  width: 60px;
-  height: 60px;
+  width: 50px;
+  height: 50px;
   margin: 15px 30px;
   transform: rotate(-30deg) skew(25deg);
   background: #ccc;
 }
-
-.cuatro .texto .social ul li span {
+#sec5 .row .col .texto .social ul li span {
   position: absolute;
   top: 0;
   left: 0;
@@ -228,119 +234,71 @@
   background: #e4405f;
 }
 
-.wrapper a {
-  margin: 10px;
-}
-
-.cajaproyectos {
-  display: flex;
-  justify-content: space-between;
-  flex-wrap: wrap;
-  margin: 20px;
-}
-
-.proyectos {
-  width: 150px;
-  height: 150px;
-}
-
 footer {
   height: 14vh;
   width: 100%;
 }
-
-footer .conte {
-  width: 75%;
-  margin: auto;
-  padding: 5px;
+footer .row .col {
+  align-items: center;
 }
-
-footer .conte p {
-  letter-spacing: 1px;
-  text-align: center;
-  color: #ccc;
-  font-size: 14px;
-  margin: 0;
-}
-
-.baner {
-  width: 100%;
-  height: 10vh;
-  display: flex;
-}
-
-.baner a {
-  display: block;
-  width: 100%;
-  display: flex;
-  justify-content: center;
+footer .row .col .text-footer p {
+  color: white;
+  font-size: 13px;
 }
 
 @media only screen and (max-width: 767px) {
-  .navbar .navbar-brand {
+  nav .logo {
     font-size: 18px;
   }
-
-  .links {
-    font-size: 15px;
-    text-align: center;
-  }
-
-  .navbar-toggler:hover {
-    background: #924e4e;
-  }
-
-  .bonton {
-    background: white;
-  }
-
-  .carousel-caption {
-    padding-bottom: 100px;
-    margin-bottom: 27%;
-  }
-
-  .carousel-caption h2 {
-    font-size: 30px;
-  }
-
-  .carousel-caption h3 {
-    font-size: 20px;
-  }
-
-  .carousel-caption a {
-    padding: 8px 22px;
-    margin-top: 13px;
-  }
-
-  .wrapper h2 {
-    font-size: 19px;
-  }
-
-  .wrapper h3 {
-    font-size: 18px;
-  }
-
-  .wrapper p {
+  nav ul .links {
+    margin-left: 18px;
     font-size: 13px;
   }
 
-  .proyectos {
-    width: 70px;
-    height: 70px;
+  #sec1 .carousel-inner .carousel-item .carousel-caption h2 {
+    font-weight: 800;
+    font-size: 18px;
+  }
+  #sec1 .carousel-inner .carousel-item .carousel-caption h3 {
+    font-family: "Saira Condensed", sans-serif;
+    text-transform: uppercase;
+    font-weight: 600;
+    font-size: 18px;
+  }
+  #sec1 .carousel-inner .carousel-item .carousel-caption a {
+    padding: 7px 17px;
+    margin-top: 8px;
+    color: #000000;
+    font-size: 13px;
   }
 
-  .cuatro .texto .social {
-    margin-top: 100px;
+  #sec2 .row .col .texto h1, #sec3 .row .col .texto h1, #sec4 .row .col .texto h1, #sec5 .row .col .texto h1 {
+    font-size: 18px;
+  }
+  #sec2 .row .col .texto h2, #sec3 .row .col .texto h2, #sec4 .row .col .texto h2, #sec5 .row .col .texto h2 {
+    font-size: 18px;
+  }
+  #sec2 .row .col .texto h3, #sec3 .row .col .texto h3, #sec4 .row .col .texto h3, #sec5 .row .col .texto h3 {
+    font-size: 18px;
   }
 
-  .cuatro .texto .social ul li {
-    width: 45px;
-    height: 45px;
-    margin: 15px 30px;
+  #sec4 .row .col .texto .detalles i {
+    font-size: 20px;
+  }
+  #sec4 .row .col .texto .detalles p {
+    font-size: 16px;
   }
 
-  .cuatro .texto .social ul li span {
-    font-size: 22px !important;
+  #sec5 .row .col .texto .social {
+    margin-top: 50px;
+  }
+  #sec5 .row .col .texto .social ul li {
+    position: relative;
+    list-style: none;
+    width: 35px;
+    height: 35px;
+    margin: 15px 15px;
+    transform: rotate(-30deg) skew(25deg);
   }
 
   .cuatro .texto .social ul li:hover span:nth-child(5) {
@@ -364,7 +322,7 @@ footer .conte p {
   }
 
   footer {
-    height: 23vh;
+    height: 20vh;
     width: 100%;
   }
 }
