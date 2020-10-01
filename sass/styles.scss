@@ -167,6 +167,18 @@ nav {
 
       span {
         color: $color-secondary;
+
+        &:after {
+          content: ">";
+          color: $color-third;
+        }
+
+        &::before {
+          content: "<";
+          color: $color-third;
+        }
+
+
       }
     }
   }
