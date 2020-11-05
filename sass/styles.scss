@@ -50,6 +50,10 @@ body {
   padding: 0;
   box-sizing: border-box;
   text-shadow: 0 0 4px $color-third;
+  overflow-x: hidden;
+
+
+
 }
 
 .toogle {
@@ -545,8 +549,15 @@ footer {
 
 @media screen and(max-width:767px) {
   .toogle {
+ 
    
-    top: 87vh;
+ 
+   right: 0;
+  
+
+  
+
+    top: 83vh;
     left: 7vw;
    
   }
@@ -554,8 +565,13 @@ footer {
   .overlay {
     
   
-   top: 87vh;
-   left: 7vw;
+    right: 0;
+
+
+
+
+    top: 83vh;
+    left: 7vw;
   
   }
    #header {
@@ -711,9 +727,14 @@ footer {
   
 
   #header {
+    .header-logo{
+      margin: 0;
+    }
+ padding: 0;
     a {
       h2 {
         font-size: $font-big;
+        margin: 6px 0;
       }
     }
   }
