@@ -544,6 +544,24 @@ footer {
 }
 
 @media screen and(max-width:767px) {
+  .toogle {
+   
+    top: 87vh;
+    left: 7vw;
+   
+  }
+
+  .overlay {
+    
+  
+   top: 87vh;
+   left: 7vw;
+  
+  }
+   #header {
+     justify-content: center;
+     
+   }
   #hero {
     grid-template-columns: 1fr;
     grid-template-rows: 1fr 1fr;
@@ -690,14 +708,7 @@ footer {
 
 
 @media screen and(max-width:425px) {
-  .toogle {
-    width: 40px;
-    height: 40px;
-
-    top: 20px;
-    right: 20px;
-    font-size: 35px;
-  }
+  
 
   #header {
     a {
