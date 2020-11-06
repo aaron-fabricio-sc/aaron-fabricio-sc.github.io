@@ -143,7 +143,7 @@ nav ul li a:hover:before {
   position: -webkit-sticky;
   position: sticky;
   top: 0;
-  padding: 0 25px;
+  padding: 25px 0;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -153,8 +153,7 @@ nav ul li a:hover:before {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  -webkit-box-shadow: 0 0 2px #c91ee0;
-          box-shadow: 0 0 2px #c91ee0;
+  border-bottom: 1px #c91ee0 solid;
   background: #0a0729;
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
@@ -197,8 +196,7 @@ nav ul li a:hover:before {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  -webkit-box-shadow: 0 0 2px #c91ee0;
-          box-shadow: 0 0 2px #c91ee0;
+  border-bottom: 1px #c91ee0 solid;
 }
 
 #hero .hero_description {
@@ -248,8 +246,7 @@ nav ul li a:hover:before {
   width: 100%;
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
-  -webkit-box-shadow: 0 0 2px #c91ee0;
-          box-shadow: 0 0 2px #c91ee0;
+  border-bottom: 1px #c91ee0 solid;
   padding: 60px 0;
 }
 
@@ -327,8 +324,7 @@ nav ul li a:hover:before {
   padding: 60px 0;
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
-  -webkit-box-shadow: 0 0 2px #c91ee0;
-          box-shadow: 0 0 2px #c91ee0;
+  border-bottom: 1px #c91ee0 solid;
 }
 
 #service h2 {
@@ -367,8 +363,7 @@ nav ul li a:hover:before {
   padding: 60px 0;
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
-  -webkit-box-shadow: 0 0 2px #c91ee0;
-          box-shadow: 0 0 2px #c91ee0;
+  border-bottom: 1px #c91ee0 solid;
 }
 
 #portafolio h2 {
@@ -447,8 +442,7 @@ nav ul li a:hover:before {
 #contact {
   width: 100%;
   padding: 60px 0;
-  -webkit-box-shadow: 0 0 2px #c91ee0;
-          box-shadow: 0 0 2px #c91ee0;
+  border-bottom: 1px #c91ee0 solid;
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
 }

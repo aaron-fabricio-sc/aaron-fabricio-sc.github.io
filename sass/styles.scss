@@ -160,11 +160,11 @@ nav {
 #header {
   position: sticky;
   top: 0;
-  padding: 0 25px;
+  padding: 25px 0;
   display: flex;
   justify-content: start;
   align-items: center;
-  box-shadow: 0 0 2px $color-third;
+  border-bottom: 1px $color-third solid;
   background: $color-primary;
   box-sizing: border-box;
   z-index: 100;
@@ -205,7 +205,8 @@ nav {
   box-sizing: border-box;
   grid-template-columns: 1fr 1fr;
   align-items: center;
-   box-shadow: 0 0 2px $color-third;
+    border-bottom: 1px $color-third solid;
+
  
 
   .hero_description {
@@ -259,7 +260,8 @@ nav {
 
 
   box-sizing: border-box;
- box-shadow: 0 0 2px $color-third;
+  border-bottom: 1px $color-third solid;
+
  padding: $big-xl 0;
 
   h2 {
@@ -314,7 +316,8 @@ nav {
   width: 100%;
   padding: $big-xl 0;
   box-sizing: border-box;
-  box-shadow: 0 0 2px $color-third;
+   border-bottom: 1px $color-third solid;
+
   h2 {
     @include cabezeras();
   }
@@ -345,7 +348,8 @@ nav {
   padding: $big-xl 0;
   box-sizing: border-box;
   
- box-shadow: 0 0 2px $color-third;
+   border-bottom: 1px $color-third solid;
+
 
   h2 {
     @include cabezeras();
@@ -408,7 +412,8 @@ nav {
 #contact {
   width: 100%;
   padding: $big-xl 0;
-   box-shadow: 0 0 2px $color-third;
+  border-bottom: 1px $color-third solid;
+
    box-sizing: border-box;
 
   h2 {
