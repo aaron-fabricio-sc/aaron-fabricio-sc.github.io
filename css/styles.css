@@ -1,5 +1,9 @@
 @import url('https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300;0,400;0,600;0,700;0,800;1,300;1,400;1,600;1,700;1,800&display=swap" rel="stylesheet');
 @import url('https://fonts.googleapis.com/css2?family=Saira+Condensed:wght@100;200;300;400;500;600;700;800;900&display=swap" rel="stylesheet');
+html {
+  scroll-behavior: smooth;
+}
+
 body {
   background-color: #0a0729;
   font-family: "Open Sans", sans-serif;
@@ -10,6 +14,10 @@ body {
           box-sizing: border-box;
   text-shadow: 0 0 4px #c91ee0;
   overflow-x: hidden;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  margin: 0;
 }
 
 .toogle {
@@ -145,8 +153,8 @@ nav ul li a:hover:before {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  -webkit-box-shadow: 0px 0px 4px #c91ee0;
-          box-shadow: 0px 0px 4px #c91ee0;
+  -webkit-box-shadow: 0 0 2px #c91ee0;
+          box-shadow: 0 0 2px #c91ee0;
   background: #0a0729;
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
@@ -178,10 +186,10 @@ nav ul li a:hover:before {
 
 #hero {
   width: 100%;
-  height: 85vh;
+  height: 87vh;
   display: -ms-grid;
   display: grid;
-  padding: 40px;
+  padding: 60px 0;
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
   -ms-grid-columns: 1fr 1fr;
@@ -189,6 +197,8 @@ nav ul li a:hover:before {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+  -webkit-box-shadow: 0 0 2px #c91ee0;
+          box-shadow: 0 0 2px #c91ee0;
 }
 
 #hero .hero_description {
@@ -236,12 +246,11 @@ nav ul li a:hover:before {
 
 #about-me {
   width: 100%;
-  padding: 40px;
-  margin-top: 40px;
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
-  -webkit-box-shadow: 0 0 3px #c91ee0;
-          box-shadow: 0 0 3px #c91ee0;
+  -webkit-box-shadow: 0 0 2px #c91ee0;
+          box-shadow: 0 0 2px #c91ee0;
+  padding: 60px 0;
 }
 
 #about-me h2 {
@@ -319,6 +328,8 @@ nav ul li a:hover:before {
   padding: 20px;
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
+  -webkit-box-shadow: 0 0 2px #c91ee0;
+          box-shadow: 0 0 2px #c91ee0;
 }
 
 #service h2 {
@@ -354,12 +365,12 @@ nav ul li a:hover:before {
 
 #portafolio {
   width: 100%;
-  padding: 40px;
+  padding: 60px;
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
   margin: 20px 0;
-  -webkit-box-shadow: 0 0 3px #c91ee0;
-          box-shadow: 0 0 3px #c91ee0;
+  -webkit-box-shadow: 0 0 2px #c91ee0;
+          box-shadow: 0 0 2px #c91ee0;
 }
 
 #portafolio h2 {
@@ -436,7 +447,11 @@ nav ul li a:hover:before {
 
 #contact {
   width: 100%;
-  margin: 20px 0;
+  padding: 60px 0;
+  -webkit-box-shadow: 0 0 2px #c91ee0;
+          box-shadow: 0 0 2px #c91ee0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
 }
 
 #contact h2 {
@@ -590,8 +605,6 @@ nav ul li a:hover:before {
 
 footer {
   padding: 14px 0;
-  -webkit-box-shadow: 0 0 3px #c91ee0;
-          box-shadow: 0 0 3px #c91ee0;
 }
 
 footer .footer_container {
@@ -609,10 +622,6 @@ footer .footer_container {
         -ms-flex-pack: center;
             justify-content: center;
     width: 100%;
-  }
-  #portafolio {
-    padding: 20px;
-    margin: 20px 0;
   }
   #portafolio .portafolio_container {
     display: -ms-grid;
@@ -659,7 +668,6 @@ footer .footer_container {
   }
   #about-me {
     width: 100%;
-    padding: 8px;
   }
   #about-me .about-me_skills {
     display: -ms-grid;
@@ -680,8 +688,7 @@ footer .footer_container {
     font-size: 14px;
   }
   #service {
-    margin: 20px 0;
-    padding: 14px;
+    padding: 60px 0;
   }
   #service .service_container {
     -ms-grid-columns: (1fr)[2];
@@ -697,8 +704,7 @@ footer .footer_container {
     font-size: 18px;
   }
   #portafolio {
-    padding: 20px;
-    margin: 20px 0;
+    padding: 60px;
   }
   #portafolio .portafolio_container {
     display: -ms-grid;
@@ -706,6 +712,9 @@ footer .footer_container {
     grid-gap: 25px 10px;
     -ms-grid-columns: (1fr)[2];
         grid-template-columns: repeat(2, 1fr);
+  }
+  #contact {
+    padding: 60px;
   }
   #contact .contact_container-gmail a {
     text-decoration: none;
@@ -770,7 +779,6 @@ footer .footer_container {
   }
   #about-me {
     width: 100%;
-    padding: 8px;
   }
   #about-me h2 {
     font-size: 26px;
@@ -794,9 +802,6 @@ footer .footer_container {
   }
   #service h2 {
     font-size: 26px;
-  }
-  #portafolio {
-    padding: 14px;
   }
   #portafolio h2 {
     font-size: 26px;
