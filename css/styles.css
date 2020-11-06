@@ -323,9 +323,8 @@ nav ul li a:hover:before {
 }
 
 #service {
-  margin: 20px 0;
   width: 100%;
-  padding: 20px;
+  padding: 60px 0;
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
   -webkit-box-shadow: 0 0 2px #c91ee0;
@@ -365,10 +364,9 @@ nav ul li a:hover:before {
 
 #portafolio {
   width: 100%;
-  padding: 60px;
+  padding: 60px 0;
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
-  margin: 20px 0;
   -webkit-box-shadow: 0 0 2px #c91ee0;
           box-shadow: 0 0 2px #c91ee0;
 }
@@ -379,6 +377,7 @@ nav ul li a:hover:before {
   color: #00c7b2;
   text-transform: uppercase;
   font-family: "Saira Condensed", sans-serif;
+  margin: 14px;
 }
 
 #portafolio .portafolio_container {

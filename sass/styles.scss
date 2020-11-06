@@ -310,9 +310,9 @@ nav {
 }
 
 #service {
-  margin: $big 0;
+ 
   width: 100%;
-  padding: $big;
+  padding: $big-xl 0;
   box-sizing: border-box;
   box-shadow: 0 0 2px $color-third;
   h2 {
@@ -342,13 +342,14 @@ nav {
 #portafolio {
   width: 100%;
 
-  padding: $big-xl;
+  padding: $big-xl 0;
   box-sizing: border-box;
-  margin: $big 0;
+  
  box-shadow: 0 0 2px $color-third;
 
   h2 {
     @include cabezeras();
+    margin: $normal;
   }
 
   .portafolio_container {
