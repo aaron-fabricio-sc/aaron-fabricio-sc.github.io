@@ -686,9 +686,6 @@ footer .footer_container {
   #about-me .about-me_skills figure p {
     font-size: 14px;
   }
-  #service {
-    padding: 60px 0;
-  }
   #service .service_container {
     -ms-grid-columns: (1fr)[2];
         grid-template-columns: repeat(2, 1fr);
@@ -702,18 +699,12 @@ footer .footer_container {
   #service .service_container .service_container-description i {
     font-size: 18px;
   }
-  #portafolio {
-    padding: 60px;
-  }
   #portafolio .portafolio_container {
     display: -ms-grid;
     display: grid;
     grid-gap: 25px 10px;
     -ms-grid-columns: (1fr)[2];
         grid-template-columns: repeat(2, 1fr);
-  }
-  #contact {
-    padding: 60px;
   }
   #contact .contact_container-gmail a {
     text-decoration: none;
@@ -757,9 +748,6 @@ footer .footer_container {
 }
 
 @media screen and (max-width: 425px) {
-  #header {
-    padding: 0;
-  }
   #header .header-logo {
     margin: 0;
   }
