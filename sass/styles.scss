@@ -21,7 +21,7 @@ $font-normal: 18px;
 $font-small: 14px;
 
 //ESPACIADOS
-$big-xl: 60px;
+$big-xl: 90px;
 $big: 20px;
 $normal: 14px;
 $small: 8px;
@@ -32,6 +32,7 @@ $small: 8px;
   color: $color-secondary;
   text-transform: uppercase;
   font-family: $fuente2;
+  margin:$normal 0;
 }
 
 @mixin cabezerados {
@@ -40,6 +41,8 @@ $small: 8px;
   color: $color-secondary;
   text-transform: uppercase;
   font-family: $fuente2;
+  margin:$normal 0;
+
 }
 html{
   scroll-behavior: smooth;
@@ -178,7 +181,7 @@ nav {
     color: $color-claro;
    
 
-    h2 {
+    h1 {
       font-size: $font-big-xl;
  padding-left: $big;
       span {
@@ -226,7 +229,7 @@ nav {
       }
     }
 
-    h1 {
+    h2 {
       font-size: $title;
       color: $color-third;
     }
