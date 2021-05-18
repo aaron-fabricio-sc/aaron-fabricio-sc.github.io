@@ -1,10 +1,8 @@
 @import url('https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300;0,400;0,600;0,700;0,800;1,300;1,400;1,600;1,700;1,800&display=swap" rel="stylesheet');
 @import url('https://fonts.googleapis.com/css2?family=Saira+Condensed:wght@100;200;300;400;500;600;700;800;900&display=swap" rel="stylesheet');
 
-$fuente1: "Open Sans",
-sans-serif;
-$fuente2: "Saira Condensed",
-sans-serif;
+$fuente1: "Open Sans", sans-serif;
+$fuente2: "Saira Condensed", sans-serif;
 
 $color-claro: white;
 $color-oscuro: #000000;
@@ -277,6 +275,25 @@ nav {
     }
   }
 }
+.cuatro .texto .social ul li:nth-child(1) span {
+  background: #3b5999;
+}
+
+.cuatro .texto .social ul li:nth-child(2) span {
+  background: #0077b5;
+}
+
+.cuatro .texto .social ul li:nth-child(3) span {
+  background: #55acee;
+}
+
+.cuatro .texto .social ul li:nth-child(4) span {
+  background: black;
+}
+
+.cuatro .texto .social ul li:nth-child(5) span {
+  background: #25d366;
+}
 
 .cuatro .texto .social ul li:hover span:nth-child(5) {
   transform: translate(40px, -40px);
@@ -301,26 +318,6 @@ nav {
 .cuatro .texto .social ul li:hover span:nth-child(1) {
   transform: translate(0, 0);
   opacity: 0;
-}
-
-.cuatro .texto .social ul li:nth-child(1) span {
-  background: #3b5999;
-}
-
-.cuatro .texto .social ul li:nth-child(2) span {
-  background: #0077b5;
-}
-
-.cuatro .texto .social ul li:nth-child(3) span {
-  background: #55acee;
-}
-
-.cuatro .texto .social ul li:nth-child(4) span {
-  background: #e4405f;
-}
-
-.cuatro .texto .social ul li:nth-child(5) span {
-  background: #25d366;
 }
 
 footer {
