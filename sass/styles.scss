@@ -577,9 +577,7 @@ footer {
   #portafolio {
     .portafolio_container {
       display: grid;
-      grid-gap: 25px 10px;
-
-      grid-template-columns: repeat(3, 1fr);
+      width: 80%;
     }
   }
 }
@@ -680,7 +678,14 @@ footer {
       display: grid;
       grid-gap: 25px 10px;
 
-      grid-template-columns: repeat(2, 1fr);
+      grid-template-columns: 1fr;
+      .portafolio_container-element {
+        display: grid;
+        grid-template-columns: 1fr;
+      }
+    }
+    p {
+      font-size: $font-small;
     }
   }
 
@@ -810,10 +815,10 @@ footer {
     }
 
     .portafolio_container {
+      width: 80%;
+      display: grid;
+      grid-template-columns: 1fr;
       .portafolio_container-element {
-        width: 100px;
-        height: 100px;
-
         a {
           .cover {
             transform: translateY(100px);

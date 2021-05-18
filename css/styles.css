@@ -651,9 +651,7 @@ footer .footer_container {
   #portafolio .portafolio_container {
     display: -ms-grid;
     display: grid;
-    grid-gap: 25px 10px;
-    -ms-grid-columns: (1fr)[3];
-        grid-template-columns: repeat(3, 1fr);
+    width: 80%;
   }
 }
 
@@ -735,8 +733,17 @@ footer .footer_container {
     display: -ms-grid;
     display: grid;
     grid-gap: 25px 10px;
-    -ms-grid-columns: (1fr)[2];
-        grid-template-columns: repeat(2, 1fr);
+    -ms-grid-columns: 1fr;
+        grid-template-columns: 1fr;
+  }
+  #portafolio .portafolio_container .portafolio_container-element {
+    display: -ms-grid;
+    display: grid;
+    -ms-grid-columns: 1fr;
+        grid-template-columns: 1fr;
+  }
+  #portafolio p {
+    font-size: 14px;
   }
   #contact .contact_container-gmail a {
     text-decoration: none;
@@ -825,9 +832,12 @@ footer .footer_container {
   #portafolio h2 {
     font-size: 26px;
   }
-  #portafolio .portafolio_container .portafolio_container-element {
-    width: 100px;
-    height: 100px;
+  #portafolio .portafolio_container {
+    width: 80%;
+    display: -ms-grid;
+    display: grid;
+    -ms-grid-columns: 1fr;
+        grid-template-columns: 1fr;
   }
   #portafolio .portafolio_container .portafolio_container-element a .cover {
     -webkit-transform: translateY(100px);
