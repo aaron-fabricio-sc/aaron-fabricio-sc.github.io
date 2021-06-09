@@ -1,0 +1,24 @@
+{
+  "name": "aaron-fabricio-sc.github.io",
+  "version": "1.0.0",
+  "description": "Portafolio",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "build": "webpack --mode production"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/aaron-fabricio-sc/aaron-fabricio-sc.github.io.git"
+  },
+  "author": "Aaron Fabricio",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/aaron-fabricio-sc/aaron-fabricio-sc.github.io/issues"
+  },
+  "homepage": "https://github.com/aaron-fabricio-sc/aaron-fabricio-sc.github.io#readme",
+  "devDependencies": {
+    "webpack": "^5.38.1",
+    "webpack-cli": "^4.7.2"
+  }
+}

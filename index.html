@@ -14,12 +14,18 @@
     />
     <meta name="copyright" content="Aaron Fabricio Santa Cruz Valdez" />
     <link rel="shortcut icon" type="image/x-icon" href="img/logo.png" />
+    <link
+      rel="stylesheet"
+      href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css"
+      integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p"
+      crossorigin="anonymous"
+    />
     <link rel="stylesheet" href="iconos/style.css" />
 
     <link rel="stylesheet" href="css/animate.css" />
 
     <meta http-equiv="X-UA-Compatible" content="ie=edge" />
-    <link rel="stylesheet" href="css/styles.css" />
+    <link rel="stylesheet" href="src/css/styles.css" />
     <title>Programador WEB Aarón Code</title>
   </head>
 
@@ -397,7 +403,8 @@
                 <span></span>
                 <span></span>
                 <span></span>
-                <span class="icon-facebook"></span>
+
+                <span class="fab fa-facebook-f"></span>
               </a>
             </li>
             <li>
@@ -409,7 +416,7 @@
                 <span></span>
                 <span></span>
                 <span></span>
-                <span class="icon-linkedin"></span>
+                <span class="fab fa-linkedin-in"></span>
               </a>
             </li>
             <li>
@@ -418,7 +425,7 @@
                 <span></span>
                 <span></span>
                 <span></span>
-                <span class="icon-twitter"></span>
+                <span class="fab fa-twitter"></span>
               </a>
             </li>
             <li>
@@ -427,7 +434,7 @@
                 <span></span>
                 <span></span>
                 <span></span>
-                <span class="icon-github"></span>
+                <span class="fab fa-github"></span>
               </a>
             </li>
             <li>
@@ -436,7 +443,7 @@
                 <span></span>
                 <span></span>
                 <span></span>
-                <span class="icon-whatsapp"></span>
+                <span class="fab fa-whatsapp"></span>
               </a>
             </li>
           </ul>
@@ -455,25 +462,5 @@
     </footer>
   </body>
 
-  <script>
-    const toggle = document.getElementById("toggle");
-    const overlay = document.getElementById("overlay");
-    const nav = document.getElementById("nav");
-    const d = document;
-
-    toggle.addEventListener("click", () => {
-      toggle.classList.toggle("menu");
-      overlay.classList.toggle("overlay-active");
-      nav.classList.toggle("nav-active");
-    });
-
-    d.addEventListener("click", (e) => {
-      if (e.target.matches(".menuelemt")) {
-        toggle.classList.remove("menu");
-
-        overlay.classList.remove("overlay-active");
-        nav.classList.remove("nav-active");
-      }
-    });
-  </script>
+  >
 </html>
