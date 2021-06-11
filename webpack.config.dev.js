@@ -1,19 +1,15 @@
 const path = require("path");
 const HtmlWebpackPlugin = require("html-webpack-plugin");
 const MiniCssExtractPlugin = require("mini-css-extract-plugin");
-const CssMinimizerPlugin = require("css-minimizer-webpack-plugin");
-const TerserPlugin = require("terser-webpack-plugin");
 
 const CopyPlugin = require("copy-webpack-plugin");
-
-const { CleanWebpackPlugin } = require("clean-webpack-plugin");
 module.exports = {
   entry: "./src/index.js",
   output: {
     path: path.resolve(__dirname, "dist"),
     filename: "[name].[contenthash].js",
   },
-  mode: "production",
+  mode: "development",
   resolve: {
     extensions: [".js"],
     alias: {
@@ -53,11 +49,5 @@ module.exports = {
         },
       ],
     }),
-    new CleanWebpackPlugin(),
   ],
-
-  optimization: {
-    minimizer: true,
-    minimizer: [new CssMinimizerPlugin(), new TerserPlugin()],
-  },
 };

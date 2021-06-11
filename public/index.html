@@ -20,12 +20,9 @@
       integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p"
       crossorigin="anonymous"
     />
-    <link rel="stylesheet" href="iconos/style.css" />
-
-    <link rel="stylesheet" href="css/animate.css" />
 
     <meta http-equiv="X-UA-Compatible" content="ie=edge" />
-    <link rel="stylesheet" href="src/css/styles.css" />
+
     <title>Programador WEB Aarón Code</title>
   </head>
 
@@ -64,7 +61,7 @@
       <div class="hero_img">
         <img
           loading="lazy"
-          src="img/hero-img.png"
+          src="imgoptimizadas/hero-img.png"
           alt="Imagen de desarrollador"
         />
       </div>
@@ -89,125 +86,27 @@
       <h3>Habilidades:</h3>
       <br />
       <h3>Conocimientos solidos</h3>
-      <div class="about-me_skills">
-        <figure>
-          <img loading="lazy" src="imgoptimizadas/html.png" alt="HTML" />
-          <p>HTML</p>
-        </figure>
-        <figure>
-          <img loading="lazy" src="imgoptimizadas/css.png" alt="CSS" />
-          <p>CSS</p>
-        </figure>
-        <figure>
-          <img loading="lazy" src="imgoptimizadas/js.png" alt="Java Script" />
-          <p>Java Script</p>
-        </figure>
-      </div>
+      <div id="conocimientos_solidos" class="about-me_skills"></div>
+
       <h3>Frameworks CSS</h3>
-      <div class="about-me_skills">
-        <figure>
-          <img
-            loading="lazy"
-            src="imgoptimizadas/bootstrap.png"
-            alt="Bootstrap"
-          />
-          <p>Bootstrap</p>
-        </figure>
-        <figure>
-          <img
-            loading="lazy"
-            src="imgoptimizadas/tailwind.svg"
-            alt="Tailwind Css"
-          />
-          <p>Tailwind Css</p>
-        </figure>
-        <figure>
-          <img
-            loading="lazy"
-            src="imgoptimizadas/materialize.svg"
-            alt="Materialize"
-          />
-          <p>Materiaze</p>
-        </figure>
-      </div>
+      <div id="framework_css" class="about-me_skills"></div>
       <h3>Preprocesadores CSS</h3>
-      <div class="about-me_skills">
-        <figure>
-          <img loading="lazy" src="imgoptimizadas/sass.png" alt="Sass" />
-          <p>SASS</p>
-        </figure>
-        <figure>
-          <img loading="lazy" src="imgoptimizadas/less.png" alt="Less" />
-          <p>LESS</p>
-        </figure>
-        <figure>
-          <img
-            loading="lazy"
-            src="imgoptimizadas/stylus-logo-svg-vector.svg"
-            alt="Stylus"
-          />
-          <p>STYLUS</p>
-        </figure>
-      </div>
+      <div class="about-me_skills" id="preProcesadoresCssContainer"></div>
       <h3>Sistema de control de versiones</h3>
-      <div class="about-me_skills">
-        <figure>
-          <img loading="lazy" src="imgoptimizadas/git.png" alt="Git" />
-          <p>Git</p>
-        </figure>
-        <figure>
-          <img loading="lazy" src="imgoptimizadas/Octocat.png" alt="Git Hub" />
-          <p>Git Hub</p>
-        </figure>
-      </div>
+      <div id="sistemaControlVersionesContainer" class="about-me_skills"></div>
 
       <h3>Node JS y Dependencias</h3>
-      <div class="about-me_skills">
-        <figure>
-          <img
-            loading="lazy"
-            src="imgoptimizadas/kisspng-node-js-javascript-web-application-express-js-comp-5ae0f84e5e7537.0464945815246930703869.png"
-            alt="NodeJS"
-          />
-          <p>NodeJS</p>
-        </figure>
-        <figure>
-          <img loading="lazy" src="imgoptimizadas/npm.png" alt="NPM" />
-          <p>NPM</p>
-        </figure>
-        <figure>
-          <img loading="lazy" src="imgoptimizadas/webpack.png" alt="WebPack" />
-          <p>WebPack</p>
-        </figure>
-        <figure>
-          <img loading="lazy" src="imgoptimizadas/babel-logo.png" alt="babel" />
-          <p>Babel</p>
-        </figure>
-      </div>
+      <div id="nodeJsContainer" class="about-me_skills"></div>
       <h3>Frameworks Javascript</h3>
-      <div class="about-me_skills">
-        <figure>
-          <img loading="lazy" src="imgoptimizadas/react.png" alt="React JS" />
-          <p>React JS</p>
-        </figure>
-      </div>
+      <div class="about-me_skills" id="frameworkJsContainer"></div>
       <h3>Lenguajes de backend y frameworks</h3>
-      <div class="about-me_skills">
-        <figure>
-          <img loading="lazy" src="imgoptimizadas/Daco_5484708.png" alt="Php" />
-          <p>PHP</p>
-        </figure>
-        <figure>
-          <img loading="lazy" src="imgoptimizadas/laravel.png" alt="Php" />
-          <p>Laravel</p>
-        </figure>
-      </div>
+      <div class="about-me_skills" id="backendFramewors"></div>
     </section>
     <section id="service">
       <h2>Service</h2>
       <div class="service_container">
         <div class="service_container-description">
-          <i class="icon-display"></i><i class="icon-mobile"></i>
+          <i class="icon-display"></i><i class="fas fa-mobile-alt"></i>
           <h3>Diseños web Desktop y mobile</h3>
           <p class="text">
             Con las últimas tecnologías, los sitios web se adaptan a todas las
@@ -215,7 +114,7 @@
           </p>
         </div>
         <div class="service_container-description">
-          <i class="icon-database"></i>
+          <i class="fas fa-database"></i>
           <h3>Programador web</h3>
           <p>
             Con conocimientos en Tecnologías de Sitios Web. HTML5, CSS3,
@@ -224,7 +123,7 @@
           </p>
         </div>
         <div class="service_container-description">
-          <i class="icon-accessibility"></i>
+          <i class="fas fa-universal-access"></i>
           <h3>Auditoría a páginas web</h3>
           <p>Auditoría de: SEO, Performance y Accesibilidad.</p>
         </div>
