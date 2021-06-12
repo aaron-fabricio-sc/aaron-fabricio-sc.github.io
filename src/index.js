@@ -1,4 +1,10 @@
 import "@sass/styles.scss";
+
+import JavaScript from "./imgoptimizadas/js.png";
+import Html from "./imgoptimizadas/html.png";
+import Css from "./imgoptimizadas/css.png";
+import Bootstrap from "./imgoptimizadas/bootstrap.png";
+
 function templateElements(nombre, url, container) {
   let informacion = `  <figure>
           <img loading="lazy" src="${url}" alt="${nombre}" />
@@ -6,25 +12,26 @@ function templateElements(nombre, url, container) {
         </figure>`;
   container.innerHTML += informacion;
 }
+
 const conocimientosSolidos = [
   {
     nombre: "HTML",
-    url: "imgoptimizadas/html.png",
+    url: Html,
   },
   {
     nombre: "CSS",
-    url: "imgoptimizadas/css.png",
+    url: Css,
   },
   {
     nombre: "JavaScript",
-    url: "imgoptimizadas/js.png",
+    url: JavaScript,
   },
 ];
 
 const frameworksCss = [
   {
     nombre: "Bootstrap",
-    url: "imgoptimizadas/bootstrap.png",
+    url: Bootstrap,
   },
   {
     nombre: "TailwindCss",

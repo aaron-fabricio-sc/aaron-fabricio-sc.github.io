@@ -12,6 +12,7 @@ module.exports = {
   output: {
     path: path.resolve(__dirname, "dist"),
     filename: "[name].[contenthash].js",
+    assetModuleFilename: "assets/images/[hash][ext][query]",
   },
   mode: "production",
   resolve: {
@@ -32,6 +33,10 @@ module.exports = {
       {
         test: /\.css$|.scss|.sass/i,
         use: [MiniCssExtractPlugin.loader, "css-loader", "sass-loader"],
+      },
+      {
+        test: /\.(png|jpg|jpeg)$/,
+        type: "asset/resource",
       },
     ],
   },
