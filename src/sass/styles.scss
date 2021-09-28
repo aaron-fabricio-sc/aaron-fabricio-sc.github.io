@@ -65,13 +65,13 @@ h6 {
 }
 
 .toogle {
-  width: 45px;
-  height: 45px;
+  width: 55px;
+  height: 55px;
   background-color: $color-secondary;
   border-radius: 50%;
   position: fixed;
-  top: 25px;
-  right: 25px;
+  top: 3%;
+  right: 15%;
   color: $color-claro;
   display: flex;
   z-index: 1000;
@@ -84,12 +84,12 @@ h6 {
 }
 
 .overlay {
-  width: 45px;
-  height: 45px;
+  width: 55px;
+  height: 55px;
   border-radius: 50%;
   position: fixed;
-  top: 25px;
-  right: 25px;
+  top: 3%;
+  right: 15%;
   background: rgba(0, 0, 0, 0.8);
   transition: transform 0.5s;
 }
@@ -536,16 +536,16 @@ footer {
 @media screen and(max-width:767px) {
   .toogle {
     right: 0;
-
-    top: 83vh;
-    left: 7vw;
+    bottom: 0;
+    top: 85%;
+    left: 8%;
   }
 
   .overlay {
     right: 0;
-
-    top: 83vh;
-    left: 7vw;
+    bottom: 0;
+    top: 85%;
+    left: 8%;
   }
 
   #header {
