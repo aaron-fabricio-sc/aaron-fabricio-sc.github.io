@@ -161,7 +161,8 @@ nav {
 
 #header {
   position: sticky;
-
+  max-width: 1100px;
+  margin: auto;
   width: 100%;
 
   top: 0;
@@ -244,6 +245,7 @@ nav {
       border-radius: 5px;
       font-weight: 500;
       text-decoration: none;
+      margin: 10px 0;
 
       &:hover {
         background: $color-third;
@@ -370,6 +372,7 @@ nav {
 
     .portafolio_container-element {
       width: 100%;
+      box-shadow: 0 0 2px white;
       display: grid;
       grid-template-columns: 1fr 1fr;
       grid-gap: $normal;
@@ -479,7 +482,6 @@ nav {
         width: 50px;
         height: 50px;
         margin: 15px 30px;
-
         a {
           text-decoration: none;
 
