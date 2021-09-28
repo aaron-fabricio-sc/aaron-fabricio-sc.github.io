@@ -254,7 +254,7 @@ nav {
               transform: rotate(-30deg) skew(25deg);
               background: #ccc;
 
-              span {
+              i {
                 position: absolute;
                 top: 0;
                 left: 0;
@@ -275,49 +275,24 @@ nav {
     }
   }
 }
-.cuatro .texto .social ul li:nth-child(1) span {
+.cuatro .texto .social ul li:nth-child(1) i {
   background: #3b5999;
 }
 
-.cuatro .texto .social ul li:nth-child(2) span {
+.cuatro .texto .social ul li:nth-child(2) i {
   background: #0077b5;
 }
 
-.cuatro .texto .social ul li:nth-child(3) span {
+.cuatro .texto .social ul li:nth-child(3) i {
   background: #55acee;
 }
 
-.cuatro .texto .social ul li:nth-child(4) span {
+.cuatro .texto .social ul li:nth-child(4) i {
   background: black;
 }
 
-.cuatro .texto .social ul li:nth-child(5) span {
+.cuatro .texto .social ul li:nth-child(5) i {
   background: #25d366;
-}
-
-.cuatro .texto .social ul li:hover span:nth-child(5) {
-  transform: translate(40px, -40px);
-  opacity: 1;
-}
-
-.cuatro .texto .social ul li:hover span:nth-child(4) {
-  transform: translate(30px, -30px);
-  opacity: 0.8;
-}
-
-.cuatro .texto .social ul li:hover span:nth-child(3) {
-  transform: translate(20px, -20px);
-  opacity: 0.6;
-}
-
-.cuatro .texto .social ul li:hover span:nth-child(2) {
-  transform: translate(10px, -10px);
-  opacity: 0.2;
-}
-
-.cuatro .texto .social ul li:hover span:nth-child(1) {
-  transform: translate(0, 0);
-  opacity: 0;
 }
 
 footer {

@@ -474,7 +474,6 @@ nav {
       justify-content: space-between;
 
       li {
-        position: relative;
         list-style: none;
 
         width: 50px;
@@ -482,68 +481,42 @@ nav {
         margin: 15px 30px;
         transform: rotate(-30deg) skew(25deg);
         background: #ccc;
+        a {
+          text-decoration: none;
+          i {
+            width: 100%;
+            height: 100%;
 
-        span {
-          position: absolute;
-          top: 0;
-          left: 0;
-          width: 100%;
-          height: 100%;
-
-          transition: 0.5s;
-          display: flex;
-          align-items: center;
-          justify-content: center;
-          color: #fff;
-          font-size: 30px;
+            transition: 0.5s;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            color: #fff;
+            font-size: 30px;
+          }
         }
       }
     }
   }
 }
 
-.social ul li:hover span:nth-child(5) {
-  transform: translate(40px, -40px);
-  opacity: 1;
-}
-
-.social ul li:hover span:nth-child(4) {
-  transform: translate(30px, -30px);
-  opacity: 0.8;
-}
-
-.social ul li:hover span:nth-child(3) {
-  transform: translate(20px, -20px);
-  opacity: 0.6;
-}
-
-.social ul li:hover span:nth-child(2) {
-  transform: translate(10px, -10px);
-  opacity: 0.2;
-}
-
-.social ul li:hover span:nth-child(1) {
-  transform: translate(0, 0);
-  opacity: 0;
-}
-
-.social ul li:nth-child(1) span {
+.fa-facebook-square {
   background: #3b5999;
 }
 
-.social ul li:nth-child(2) span {
+.social ul li:nth-child(2) i {
   background: #0077b5;
 }
 
-.social ul li:nth-child(3) span {
+.social ul li:nth-child(3) i {
   background: #55acee;
 }
 
-.social ul li:nth-child(4) span {
+.social ul li:nth-child(4) i {
   background: #333;
 }
 
-.social ul li:nth-child(5) span {
+.social ul li:nth-child(5) i {
   background: #25d366;
 }
 
@@ -711,32 +684,12 @@ footer {
           position: relative;
           list-style: none;
 
-          width: 50px;
-          height: 50px;
+          width: 40px;
+          height: 40px;
           margin: 15px 20px;
         }
       }
     }
-  }
-
-  .social ul li:hover span:nth-child(5) {
-    transform: translate(20px, -20px);
-  }
-
-  .social ul li:hover span:nth-child(4) {
-    transform: translate(15px, -15px);
-  }
-
-  .social ul li:hover span:nth-child(3) {
-    transform: translate(10px, -10px);
-  }
-
-  .social ul li:hover span:nth-child(2) {
-    transform: translate(5px, -5px);
-  }
-
-  .social ul li:hover span:nth-child(1) {
-    transform: translate(0, 0);
   }
 }
 
