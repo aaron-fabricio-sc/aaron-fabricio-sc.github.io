@@ -479,7 +479,7 @@ nav {
         width: 50px;
         height: 50px;
         margin: 15px 30px;
-        transform: rotate(-30deg) skew(25deg);
+
         background: #ccc;
         a {
           text-decoration: none;
@@ -487,7 +487,6 @@ nav {
             width: 100%;
             height: 100%;
 
-            transition: 0.5s;
             display: flex;
             align-items: center;
             justify-content: center;
@@ -504,19 +503,19 @@ nav {
   background: #3b5999;
 }
 
-.social ul li:nth-child(2) i {
+.fa-linkedin {
   background: #0077b5;
 }
 
-.social ul li:nth-child(3) i {
+.fa-twitter {
   background: #55acee;
 }
 
-.social ul li:nth-child(4) i {
+.fa-github {
   background: #333;
 }
 
-.social ul li:nth-child(5) i {
+.fa-whatsapp {
   background: #25d366;
 }
 
