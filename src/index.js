@@ -104,6 +104,31 @@ const lenguajesBackendFrameworks = [
     url: "imgoptimizadas/laravel.png",
   },
 ];
+const templateEngine = [
+  {
+    nombre: "PUG",
+    url: "imgoptimizadas/pug-logo.png",
+  },
+  {
+    nombre: "Embedded JavaScript",
+    url: "imgoptimizadas/ejs.png",
+  },
+];
+const $templateEngine = document.getElementById("templateEngine");
+templateEngine.forEach((e) => {
+  templateElements(e.nombre, e.url, $templateEngine);
+});
+
+const cms = [
+  {
+    nombre: "Wordpress",
+    url: "imgoptimizadas/wordpress.png",
+  },
+];
+const $templatecms = document.getElementById("cms");
+cms.forEach((e) => {
+  templateElements(e.nombre, e.url, $templatecms);
+});
 
 const nodeJsContainer = document.getElementById("nodeJsContainer");
 
