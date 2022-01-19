@@ -1,65 +1,54 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="../css/jan_ken_po.css">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="../css/jan_ken_po.css" />
     <title>Document</title>
-</head>
-<body>
+  </head>
+  <body>
     <header>
-        <h1>JUEGO PIEDRA PAPEL TIJERA</h1>
-        
-           
-   
+      <h1>JUEGO PIEDRA PAPEL TIJERA</h1>
     </header>
     <section class="contenedor">
-        <div class="contenedor__resultados">
-            <div class="contenedor__resultados-usuario">
-                <img id="usuario"src="../img/user_icon.png" alt="">
-                <p>Usuario</p>
-                <p id="puntos_usuario">0</p>
-            </div>
-            <div class="contenedor__resultados-usuario">
-                <img src="../img/vs_icon.png" alt="">
-              
-            </div>
-            <div class="contenedor__resultados-usuario">
-                <img id="cpu"src="../img/cpu.png" alt="">
-                <p>Computer</p>
-                <p id="puntos_cpu">0</p>
-            </div>
-
-
+      <div class="contenedor__resultados">
+        <div class="contenedor__resultados-usuario">
+          <img id="usuario" src="../img/user_icon.png" alt="" />
+          <p>Usuario</p>
+          <p id="puntos_usuario">0</p>
         </div>
-        <div class="contenedor__imagenes">
-            <div class="contenedor__imagenes-option">
-                <div class="contenedor__imagenes-boton">
-                    <button id="Piedra" class="container_options__button"></button>
-                </div>
-                <div class="contenedor__imagenes-boton">
-                    <button id="Papel" class="container_options__button"></button>
-                </div>
-                <div class="contenedor__imagenes-boton">
-                    <button id="Tijera" class="container_options__button"></button>
-                </div>
-            </div>
-
-            <div class="instructions">
-                <p>Elige una opción!</p>
-            </div>
-
+        <div class="contenedor__resultados-usuario">
+          <img src="../img/vs_icon.png" alt="" />
         </div>
-        
-      
-        <div class="contenedor_button">
-            <button id="Iniciar_juego">Iniciar juego</button>
+        <div class="contenedor__resultados-usuario">
+          <img id="cpu" src="../img/cpu.png" alt="" />
+          <p>Computer</p>
+          <p id="puntos_cpu">0</p>
         </div>
-       
+      </div>
+      <div class="contenedor__imagenes">
+        <div class="contenedor__imagenes-option">
+          <div class="contenedor__imagenes-boton">
+            <button id="Piedra" class="container_options__button"></button>
+          </div>
+          <div class="contenedor__imagenes-boton">
+            <button id="Papel" class="container_options__button"></button>
+          </div>
+          <div class="contenedor__imagenes-boton">
+            <button id="Tijera" class="container_options__button"></button>
+          </div>
+        </div>
+
+        <div class="instructions">
+          <p>Elige una opción!</p>
+        </div>
+      </div>
+
+      <div class="contenedor_button">
+        <button id="Iniciar_juego">Iniciar juego</button>
+      </div>
     </section>
-     
 
-
-    <script src="../js/uno.js"></script>
-</body>
+    <script src="../../js/uno.js"></script>
+  </body>
 </html>
