@@ -74,6 +74,10 @@ const nodeJs = [
     nombre: "Babel",
     url: "imgoptimizadas/babel-logo.png",
   },
+  {
+    nombre: "Express",
+    url: "imgoptimizadas/express.png",
+  },
 ];
 
 const sistemaControlVersiones = [
@@ -114,6 +118,20 @@ const templateEngine = [
     url: "imgoptimizadas/ejs.png",
   },
 ];
+const DataBase = [
+  {
+    nombre: "Mongo DB",
+    url: "imgoptimizadas/mongodb-logo.png",
+  },
+  {
+    nombre: "MySQL",
+    url: "imgoptimizadas/mysql.png",
+  },
+];
+const $templateDataBase = document.getElementById("database");
+DataBase.forEach((e) => {
+  templateElements(e.nombre, e.url, $templateDataBase);
+});
 const $templateEngine = document.getElementById("templateEngine");
 templateEngine.forEach((e) => {
   templateElements(e.nombre, e.url, $templateEngine);
